@@ -1,4 +1,5 @@
 Nimap Machine Test
+
 A) Use Spring boot
 
 B) Use Rest controller
