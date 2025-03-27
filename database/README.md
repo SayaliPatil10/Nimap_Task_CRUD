@@ -1,39 +1,65 @@
-Ankush Darade, \
-about me - https://ankush-darade.netlify.app/ \
-<br/>
-<br/>
-Nimap Infotech Task Details \
-![image](https://github.com/ankushdarade84/Nimap-Task-Spring-Boot-CRUD/assets/82811718/a158ac32-84ae-433d-96fb-2ba6992ba0df) \
-<br/>
-<br/>
-follow the following steps to run the program <br/>
-1 import the NimapTask folder in the Java editor(eclipse). <br/>
-          &nbsp;&nbsp;Change the application.properties file according to your database  <br/>
-2 import Nimap.Postman_Collection.json file in Postman to check the test API. <br/>
-3 import the database tables in MySQL to check the output. <br/>
-4 Run the Program.<br/>
+A) Use Spring boot
 
-<br/>
-<br/>
+B) Use Rest controller
 
+C) Need DB configuration (Use RDB instead of in-memory)
 
-Test the API Using the following way <br/>
+D) Use annotation based configuration (Not XML).
 
-1. using swagger URL in Chrome(not need Postman) <br/>
-   URL -  http://localhost:8080/swagger-ui/index.html <br/>
- ![image](https://github.com/ankushdarade84/Nimap-Task-Spring-Boot-CRUD/assets/82811718/846f2074-5665-4cd0-8168-ed8855434bf4)
- <br/>
-2. using postman <br/>
-   ![image](https://github.com/ankushdarade84/Nimap-Task-Spring-Boot-CRUD/assets/82811718/96731f71-1314-44af-b683-e1736ce2485a) <br/>
-<br/>
+E) JPA & Hibernate
 
-<br/>
-<br/>
-Database check <br/>
-![image](https://github.com/ankushdarade84/Nimap-Task-Spring-Boot-CRUD/assets/82811718/88c0e24c-328a-4c20-8465-1fbb675e656f)  <br/>
-![image](https://github.com/ankushdarade84/Nimap-Task-Spring-Boot-CRUD/assets/82811718/ac1a5a27-0fc4-4ec9-a09c-92d372d806fc)
+ 
 
+1) Category CRUD operation.
 
+Below are the APIs required to be developed :
 
+1 http://localhost:8080/api/categories?page=3
 
+GET all the categories
 
+2 http://localhost:8080/api/categories
+
+POST - create a new category
+
+3 http://localhost:8080/api/categories/{di}
+
+GET category by Id
+
+4 http://localhost:8080/api/categories/{di}
+
+PUT - update category by id
+
+5 http://localhost:8080/api/categories/{di}
+
+DELETE - Delete category by id
+
+ 
+2) Product CRUD operation.
+Below are the APIs required to be developed :
+
+1 http://localhost:8080/api/products?page=2
+
+GET all the products
+
+2 http://localhost:8080/api/products
+
+POST - create a new product
+
+3 http://localhost:8080/api/products/{di}
+
+GET product by Id
+
+4 http://localhost:8080/api/products/{di}
+
+PUT - update product by id
+
+5 http://localhost:8080/api/products/{di}
+
+DELETE - Delete product by id
+
+3) Relation between Category-Products should have one-to-many relation. (One category can have multiple products).
+
+4) Machine test should have Server side pagination.
+
+5) While fetching single product details the response should be populated with respective category details.
