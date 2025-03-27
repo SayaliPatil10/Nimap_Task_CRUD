@@ -65,3 +65,12 @@ DELETE - Delete product by id
 4) Machine test should have Server side pagination.
 
 5) While fetching single product details the response should be populated with respective category details.
+
+   
+   Follow the following steps to run the program
+   
+1 import the NimapTask folder in the Java editor(eclipse).
+  Change the application.properties file according to your database
+2 import Nimap.Postman_Collection.json file in Postman to check the test API.
+3 import the database tables in MySQL to check the output.
+4 Run the Program.
